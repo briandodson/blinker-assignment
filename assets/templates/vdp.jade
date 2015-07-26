@@ -1,0 +1,191 @@
+doctype html
+html(lang="en")
+ head
+  title= BriansVDP
+  link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+  link(rel='stylesheet', href='css/blinker-theme.min.css')
+  link(rel='stylesheet', href='css/app.css')
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic', type='text/css')
+  meta(name="viewport", content="initial-scale=1")
+ body
+  div#loader 
+   div.text Hang tight, we're doin' work...
+   img(alt='blinker', src='img/blinker-logo.png') 
+  header.row.header.block
+   div.col-sm-8
+    h1.logo
+     img(alt='blinker', src='img/blinker-logo.png') 
+     span Marketplace
+   div.col-sm-4
+    button(type='button').btn.btn-primary.download-app Download App
+  
+  section.page
+   div.row.top.block.bl-wrap
+    div.col-sm-8
+     div#vehicle-carousel.carousel.slide(data-ride='carousel')
+      div.carousel-inner
+       div.item.active
+        img.first-slide(src='img/slides/jeep-wrangler-rubicon.jpg', width='960', height='720')
+       div.item
+        img.second-slide(src='img/slides/jeep-wrangler-rubicon2.jpg', width='960', height='720')
+       div.item
+        img.third-slide(src='img/slides/jeep-wrangler-rubicon3.jpg', width='960', height='720')
+      a.carousel-control.left(href='#vehicle-carousel', role='button', data-slide='prev')
+       img(src='img/arrow-left.png', alt='Previous')
+      a.carousel-control.right(href='#vehicle-carousel', role='button', data-slide='next')
+       img(src='img/arrow-right.png', alt='Next')
+    div.col-sm-4.overview
+     div.row.user
+      div.col-sm-3
+       img.avatar(src='img/user-avatar.png')
+      h1.col-sm-7.user Shannon S.
+       small Denver, Colorado 80206
+      div.col-sm-2
+       a.contact-user(data-toggle='modal', data-target='#contact-user')
+        img(alt='Contact Shannon S.', src='img/contact-icon.png')
+     div.row.vehicle
+      div.col-sm-12
+       h2 2014 Jeep Wrangler
+        small Rubicon 4x4
+       p.value 32,500
+       button(type='button').btn.btn-primary.action Buy Now For $350 / Month
+     div.row.vehicle-info
+      ul.nav.nav-tabs.nav-justified(data-tabs='tabs')
+       li.active(role='presentation')
+        a(href='#vi-overview', data-toggle='tab') Overview
+       li(role='presentation')
+        a(href='#vi-description', data-toggle='tab') Description
+      div.tab-content
+       div#vi-overview.tab-pane.active.fade.in
+        ul
+         li 8,625 Miles
+         li Automatic Transmission
+         li 25 City MPG
+         li 32 Highway MPG
+         li Good Condition
+        p.listing-id Listing ID: &nbsp;
+         strong 123
+       div#vi-description.tab-pane.fade.in
+        p Asymmetrical 3 wolf moon wayfarers, tilde Wes Anderson mlkshk bespoke. Artisan jean shorts gentrify aesthetic messenger bag photo booth yr, XOXO Marfa seitan cardigan tote bag.
+        p Cardigan meditation ennui, raw denim pickled cold-pressed put a bird on it sriracha bicycle rights.
+   div.row.bottom
+    aside.col-sm-4.blinker-power.block
+     div.bl-wrap
+      h1 The power of Blinker&reg;.
+      dl
+       dt
+        img(src='img/icon-check.png', alt='') 
+        strong 2 Year Service Contract Available
+       dd Add a 2-year service contract for peace of mind.
+       dt
+        img(src='img/icon-payment.png', alt='')
+        strong Monthly payments with Blinker Direct
+       dd Buy any car for a monthly payment and customize your terms.
+       dt
+        img(src='img/icon-dmv.png', alt='')
+        strong Blinker Does All the DMV Paperwork
+       dd More help with the paperwork means less trips to the DMV.
+       dt
+        img(src='img/icon-carfax.png', alt='')
+        strong Free Carfax&reg; Available
+       dd Get a free report for any car you're interested in.
+    div.col-sm-8.vehicle-specs.block
+     div.bl-wrap
+      ul.nav.nav-tabs.nav-justified(data-tabs='tabs')
+       li.active(role='presentation')
+        a(href='#vs-engine-mechanical', data-toggle='tab') Engine &amp; Mechanical
+       li(role='presentation')
+        a(href='#vs-exterior', data-toggle='tab') Exterior
+       li(role='presentation')
+        a(href='#vs-interior', data-toggle='tab') Interior
+       li(role='presentation')
+        a(href='#vs-safety', data-toggle='tab') Safety
+       li(role='presentation')
+        a(href='#vs-dimensions', data-toggle='tab') Dimensions
+      div.tab-content
+       div#vs-engine-mechanical.tab-pane.active.fade.in
+        dl
+         dt Engine - cylinders
+         dd 4
+         dt Engine - displacement
+         dd 2.0
+         dt Engine - fuel delivery
+         dd MPI
+         dt Engine - fuel type
+         dd Gas
+         dt Engine - horsepower @ rpm
+         dd 146 @ 6200
+         dt Engine - torque @ rpm
+         dd 133 @ 4500
+         dt Transmission - # of gears
+         dd 4
+         dt Transmission
+         dd Automatic
+         dt Transmission - type
+         dd Electronically Controlled
+         dt Brakes
+         dd Power assisted
+         dt Drive System
+         dd Real Time 4WD
+       div#vs-exterior.tab-pane.fade.in
+        h2 Exterior
+        p Asymmetrical 3 wolf moon wayfarers, tilde Wes Anderson mlkshk bespoke. Artisan jean shorts gentrify aesthetic messenger bag photo booth yr, XOXO Marfa seitan cardigan tote bag.
+       div#vs-interior.tab-pane.fade.in
+        h2 Interior
+        p Photo booth sartorial post-ironic, chillwave seitan YOLO narwhal Tumblr shabby chic High Life disrupt tofu whatever meditation ethical. YOLO heirloom Neutra polaroid, locavore mixtape keytar actually hoodie vegan post-ironic chia occupy. Listicle Tumblr squid, put a bird on it raw denim blog four loko vegan umami.
+       div#vs-safety.tab-pane.fade.in
+        h2 Safety
+        p Keytar meggings cred four dollar toast, Pinterest Marfa normcore fap cornhole tousled Godard. Cred artisan PBR&B, meh iPhone +1 Truffaut swag umami taxidermy drinking vinegar art party pork belly cardigan 8-bit. Blog street art photo booth, locavore tote bag gentrify post-ironic Wes Anderson. Bitters sustainable health goth, hella farm-to-table artisan cray Intelligentsia banjo lomo 8-bit. Literally mlkshk yr, semiotics biodiesel Tumblr Truffaut photo booth cliche Vice jean shorts Etsy tofu. Occupy cold-pressed Carles blog, seitan try-hard plaid art party irony next level. DIY flexitarian try-hard, next level lumbersexual actually umami forage Marfa vegan pop-up meditation skateboard plaid yr.
+       div#vs-dimensions.tab-pane.fade.in
+        h2 Dimensions
+        p Migas hashtag normcore, Odd Future tousled lumbersexual disrupt jean shorts. DIY shabby chic vegan cray PBR fixie. Literally aesthetic lo-fi, cold-pressed brunch PBR&B put a bird on it tote bag. 90's plaid chia, sartorial flannel salvia dreamcatcher cred umami keytar. Health goth polaroid kitsch, kale chips messenger bag PBR ethical. Polaroid bicycle rights vegan scenester Williamsburg, fap Marfa. Retro lo-fi slow-carb, chambray synth Banksy art party tofu chia cray fingerstache.
+     
+  section.footer
+   div.row
+    div.col-sm-8.footer-links
+     nav
+      ul
+       li
+        a.active(href='#') Home
+       li
+        a(href='#') Selling
+       li
+        a(href='#') Buying
+       li
+        a(href='#') About
+       li
+        a(href='#') Support/FAQ
+       li
+        a(href='#') Press
+       li
+        a(href='#') Contact
+    div.col-sm-4.social-media
+     ul
+      li
+       a(href='#')
+        img(src='img/icon-facebook.png', alt='Follow Blinker on Facebook')
+      li
+       a(href='#')
+        img(src='img/icon-twitter.png', alt='Follow Blinker on Twitter')
+   div.row
+    div.col-sm-8
+     img.footer-logo(alt='blinker', src='img/blinker-logo-2.png')
+    div.col-sm-4
+     p.copyright &copy; Copyright, 2015 All Rights Reserved.
+  
+  div#contact-user.modal.fade(role='dialog')
+   div.modal-dialog
+    div.modal-content
+     div.modal-header
+      button(type='button', data-dismiss='modal').close &times;
+      h4.modal-title Send a Message to Shannon S.
+     div.modal-body
+      form(role='form')
+       fieldset.row
+        div.form-group
+         textarea.col-sm-12.form-control
+        button(type='button').btn.btn-primary.action.col-sm-12 Send Message
+       
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+  script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+  script(src="js/all.min.js")
