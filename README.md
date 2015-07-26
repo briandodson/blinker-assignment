@@ -2,7 +2,7 @@
 
 I utilized Bootstrap responsive framework for the majority of layout and heavy lifting functionality. Not only is it clean and modern, it’s easily customizable and is well supported.
 
-At about 4 hours of actual development work, I think I’ve pretty well translated what the design dictated. I didn’t want to stray from the design as I felt it all made sense and was very cohesive. I took some liberties in the responsive layouts, particularly with the top user and vehicle information panel and with the tabbed navigation (bottom right).
+I think I’ve pretty well translated what the design dictated. I didn’t want to stray from the design as I felt it all made sense and was very cohesive. I took some liberties in the responsive layouts, particularly with the top user and vehicle information panel and with the tabbed navigation (bottom right).
 
 Certainly not every detail is perfect. I wanted to demonstrate code and functionality as a whole, and display an emphasis on development process and tools (SCSS, Jade, Gulpfile, etc.). In a normal workflow process, I’d dedicate a few more hours to pushing pixel perfection detail just a bit further.
 
