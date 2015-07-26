@@ -10,7 +10,8 @@ Certainly not every detail is perfect. I wanted to demonstrate code and function
 
 I set up a simple Gulpfile to automate CSS preprocessing (SCSS), Javascript optimization/minification (Uglify) and HTML tempting (Jade). Application-ready files are located in the /dist/ directory and original pre-processed files are in the /assets/ directory.
 
-## Regarding fonts (Benton Sans) - Due to format and licensing restrictions, I was not able to get a web font kit generated from the font files that were sent over. I added Benton Sans as the primary in the CSS font-stack, so as long as this is viewed on a machine that has Benton Sans installed, I think it should pull the font in and display properly. I added Open Sans as the fallback in the font-stack, which works pretty well. On my end, Firefox was not pulling in Benton Sans, but Chrome was. Obviously, in a production environment, we would have a Benton Sans web license and would properly embed the font via CSS @font-face property or via a supplied CDN link.
+## Regarding fonts (Benton Sans)
+Due to format and licensing restrictions, I was not able to get a web font kit generated from the font files that were sent over. I added Benton Sans as the primary in the CSS font-stack, so as long as this is viewed on a machine that has Benton Sans installed, I think it should pull the font in and display properly. I added Open Sans as the fallback in the font-stack, which works pretty well. On my end, Firefox was not pulling in Benton Sans, but Chrome was. Obviously, in a production environment, we would have a Benton Sans web license and would properly embed the font via CSS @font-face property or via a supplied CDN link.
 
 ## Regarding CSS
 
